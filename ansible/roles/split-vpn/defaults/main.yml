@@ -1,0 +1,7 @@
+---
+# defaults file for split-vpn
+
+base_dir: /etc/split-vpn
+wireguard_dir: "{{ base_dir }}/wireguard"
+protonvpn_dir: "{{ wireguard_dir }}/proton"
+splitvpn_download_dir: /splitvpn-tmp

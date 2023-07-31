@@ -1,0 +1,6 @@
+- name: Unifi OS
+  hosts: all
+  gather_facts: yes
+  become: yes
+  roles:
+    - role: split-vpn

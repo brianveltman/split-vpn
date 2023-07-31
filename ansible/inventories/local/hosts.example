@@ -1,0 +1,2 @@
+[dmps]
+dmp-01 ansible_host=192.168.1.1 ansible_ssh_user=root proton_private_key=12345678 proton_public_key=12345678 proton_endpoint=185.160.170.180:5432 proton_address=10.1.0.1/32 proton_dns=10.1.0.1

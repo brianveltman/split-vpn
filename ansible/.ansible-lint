@@ -1,0 +1,5 @@
+parseable: true
+skip_list:
+  - skip_linting
+use_default_rules: true
+verbosity: 1

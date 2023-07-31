@@ -1,0 +1,20 @@
+[Interface]
+# Key for unifi
+# Bouncing = 0
+# NetShield = 2
+# Moderate NAT = off
+# NAT-PMP (Port Forwarding) = off
+# VPN Accelerator = on
+PrivateKey = {{ proton_private_key }}
+Address = {{ proton_address }}
+#DNS = {{ proton_dns }}
+PostUp = sh /etc/split-vpn/vpn/updown.sh %i up
+PreDown = sh /etc/split-vpn/vpn/updown.sh %i down
+Table = 101
+
+
+[Peer]
+# CH-NL#1
+PublicKey = {{ proton_public_key }}
+AllowedIPs = 0.0.0.0/1,128.0.0.0/1,::/1,8000::/1
+Endpoint = {{ proton_endpoint }}
